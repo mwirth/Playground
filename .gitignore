@@ -1,0 +1,15 @@
+**/target
+**/.settings
+**/bin
+**/.project
+**/.classpath
+*.exe
+*.ilk
+*.obj
+*.pdb
+*.idb
+*.plg
+*.dsw
+*.opt
+dependency-reduced-pom.xml
+.flattened-pom.xml
