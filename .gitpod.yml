@@ -9,4 +9,13 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
+  - command: echo 'start script'
+  - command: zsh    
+
+
+vscode:
+  extensions:
+    - johnpapa.angular-essentials@0.6.3:kn6MdE8GXp3Nplq14ISQWg==
+    - bierner.github-markdown-preview@0.0.2:/2y3s+rxTHIQLjFnQusowg==
+    - CoenraadS.bracket-pair-colorizer-2@0.0.29:Y00hDi6uxq/5AWl637owFQ==
+
