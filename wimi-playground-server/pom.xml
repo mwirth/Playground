@@ -28,5 +28,7 @@
 		<module>wimi-playground-server-api</module>
 		<module>wimi-playground-server-core</module>
 		<module>wimi-playground-server-se</module>
+		<module>wimi-playground-server-app</module>
+		<module>wimi-playground-server-se-cdi</module>
 	</modules>
 </project>
