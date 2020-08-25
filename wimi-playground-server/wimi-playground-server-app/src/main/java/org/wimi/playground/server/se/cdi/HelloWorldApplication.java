@@ -17,7 +17,7 @@ public class HelloWorldApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         final Set<Class<?>> hashSet = new HashSet<>();
-        Collections.addAll(hashSet, HelloWorldResource.class);
+        Collections.addAll(hashSet, HelloWorldResource.class, MPConfigResource.class);
         return hashSet;
     }
 }
