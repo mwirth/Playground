@@ -2,27 +2,29 @@ package org.wimi.playground.server.core.resources;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
 
+import org.wimi.playground.server.api.HelloWorldService;
 import org.wimi.playground.server.core.beans.HelloGerman;
 
 /**
  * @author Michael WIRTH
  */
-@Path("")
+
 @RequestScoped
-public class HelloWorldResource {
+public class HelloWorldResource implements HelloWorldService {
 
     @Inject
     private HelloGerman hello;
 
-    @GET
-    @Produces("text/plain")
+    @Override
     public String hello() {
-        String helloGerman = hello.sayHello();
+        final String helloGerman = this.hello.sayHello();
         return "World Resourced: " + helloGerman;
+    }
+
+    @Override
+    public String helloSub() {
+        return "Hallo Test";
     }
 
 }

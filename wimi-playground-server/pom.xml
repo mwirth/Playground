@@ -30,5 +30,6 @@
 		<module>wimi-playground-server-se</module>
 		<module>wimi-playground-server-app</module>
 		<module>wimi-playground-server-se-cdi</module>
+		<module>wimi-playground-client</module>
 	</modules>
 </project>
